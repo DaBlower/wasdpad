@@ -1,46 +1,209 @@
-(footprint "SK6812MINI-E" (version 20221018) (generator pcbnew)
-  (layer "F.Cu")
-  (attr through_hole)
-  (fp_text reference "REF**" (at 0 2.1 unlocked) (layer "F.SilkS")
-      (effects (font (size 0.7 0.7) (thickness 0.15)))
-    (tstamp b88284fb-aaa4-42d6-9cad-a972e703847a)
-  )
-  (fp_text value "SK6812-MINI-E" (at 0 -0.5 unlocked) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    (tstamp f39cdc37-60ce-429a-b3e2-aa8b995dec58)
-  )
-  (fp_poly
-    (pts
-      (xy 2.8 -1.4)
-      (xy 2.2 -1.4)
-      (xy 2.2 -2)
-    )
-
-    (stroke (width 0.1) (type solid)) (fill solid) (layer "F.SilkS") (tstamp d6167f7d-a14f-40d6-967b-9af1e73cb3fb))
-  (fp_line (start -1.6 -1.4) (end 1.6 -1.4)
-    (stroke (width 0.12) (type solid)) (layer "Cmts.User") (tstamp 156060ac-56fb-40cd-ad7f-f6d782f0113d))
-  (fp_line (start -1.6 1.4) (end -1.6 -1.4)
-    (stroke (width 0.12) (type solid)) (layer "Cmts.User") (tstamp 06f735ab-4565-4a94-812d-7b33af5edb5e))
-  (fp_line (start 1.6 -1.4) (end 1.6 1.4)
-    (stroke (width 0.12) (type solid)) (layer "Cmts.User") (tstamp 89906bd8-c208-4976-9481-1f82e820825d))
-  (fp_line (start 1.6 1.4) (end -1.6 1.4)
-    (stroke (width 0.12) (type solid)) (layer "Cmts.User") (tstamp d8f3c9c2-7ef8-48fa-aaa1-446802cdc075))
-  (fp_line (start -1.7 -1.5) (end 1.7 -1.5)
-    (stroke (width 0.12) (type solid)) (layer "Edge.Cuts") (tstamp a7296c89-e37a-49e0-9eec-e43cb4f4fbe0))
-  (fp_line (start -1.7 1.5) (end -1.7 -1.5)
-    (stroke (width 0.12) (type solid)) (layer "Edge.Cuts") (tstamp 0d0cf35e-3eec-4340-a306-9a8605c43fcc))
-  (fp_line (start 1.7 -1.5) (end 1.7 1.5)
-    (stroke (width 0.12) (type solid)) (layer "Edge.Cuts") (tstamp eb85ee1e-3df6-479d-b0f9-c263eb650062))
-  (fp_line (start 1.7 1.5) (end -1.7 1.5)
-    (stroke (width 0.12) (type solid)) (layer "Edge.Cuts") (tstamp ed21ccd9-74a6-47d4-9c97-c71afbd5ee26))
-  (pad "1" smd rect (at -2.6 -0.75) (size 1.8 0.82) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 4d38ce85-6493-490c-9a84-0708ba0fe35e))
-  (pad "2" smd roundrect (at 2.6 -0.75) (size 1.8 0.82) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0)
-    (chamfer_ratio 0.2) (chamfer top_right) (tstamp 686a830c-3078-4363-b8a6-a13372992f00))
-  (pad "3" smd rect (at 2.6 0.75) (size 1.8 0.82) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 26377afe-6623-4419-aa1c-3c85ec60980b))
-  (pad "4" smd rect (at -2.6 0.75) (size 1.8 0.82) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp b4407596-3d45-4321-b92f-e6ca5004a7cc))
-  (model "${KIPRJMOD}/third_party/neopixel.petty/SK6812MINI-E.step"
-    (offset (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 90 0 0))
-  )
+(footprint "SK6812MINI-E"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "D14"
+		(at 0 2.1 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "a3c20822-0558-4259-a1e7-2fb45430925b")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SK6812MINI"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "5b94f6e6-1c7b-4156-9b7c-073cb138e915")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "cyao:SK6812MINI-E"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e384c54d-babc-48da-89f6-c701aeb9778c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "560ee6c1-9e77-4a90-bb12-c4d3e5faac6f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "RGB LED with integrated controller"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "85e7ca2b-8683-4f36-b723-0b3653240386")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_poly
+		(pts
+			(xy 2.8 -1.4) (xy 2.2 -1.4) (xy 2.2 -2)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.SilkS")
+		(uuid "35f0ced6-c130-4469-b972-44729b077c2e")
+	)
+	(fp_line
+		(start -1.6 -1.4)
+		(end 1.6 -1.4)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Cmts.User")
+		(uuid "778716cc-7b18-48ea-ad6e-d0571dc7c863")
+	)
+	(fp_line
+		(start -1.6 1.4)
+		(end -1.6 -1.4)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Cmts.User")
+		(uuid "67fad493-b4e1-467e-a3e1-d3a0195d3469")
+	)
+	(fp_line
+		(start 1.6 -1.4)
+		(end 1.6 1.4)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Cmts.User")
+		(uuid "f88cc66e-4256-484c-9b6c-bd604b8720f9")
+	)
+	(fp_line
+		(start 1.6 1.4)
+		(end -1.6 1.4)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Cmts.User")
+		(uuid "10e7a22f-59af-4f91-b322-560f45875470")
+	)
+	(fp_line
+		(start -1.7 -1.5)
+		(end 1.7 -1.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "0301294f-c6e2-4785-910b-baac4a4d56ea")
+	)
+	(fp_line
+		(start -1.7 1.5)
+		(end -1.7 -1.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "d6ebad07-99c2-4e0e-a255-b7cc115b7edc")
+	)
+	(fp_line
+		(start 1.7 -1.5)
+		(end 1.7 1.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "11c04057-4a34-4175-9ac9-2b161ae60eac")
+	)
+	(fp_line
+		(start 1.7 1.5)
+		(end -1.7 1.5)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "c011a932-ab6a-40ee-aa27-e2bfb830b9f8")
+	)
+	(pad "1" smd rect
+		(at -2.6 -0.75)
+		(size 1.8 0.82)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "c31ca209-5f55-45ed-b9ac-acdb6bd35bf8")
+	)
+	(pad "2" smd roundrect
+		(at 2.6 -0.75)
+		(size 1.8 0.82)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0)
+		(chamfer_ratio 0.2)
+		(chamfer top_right)
+		(uuid "6cb5b94b-ecd8-430b-ac01-34031819713a")
+	)
+	(pad "3" smd rect
+		(at 2.6 0.75)
+		(size 1.8 0.82)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "80183a35-5df5-4103-ad05-681b3d423efd")
+	)
+	(pad "4" smd rect
+		(at -2.6 0.75)
+		(size 1.8 0.82)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "c85a5848-d3ef-47f2-8987-73bf332cbd68")
+	)
+	(model "${KIPRJMOD}/third_party/neopixel.petty/SK6812MINI-E.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 90 0 0)
+		)
+	)
+	(model "${KIPRJMOD}/3d/LED_SK6812MINI-E.step"
+		(offset
+			(xyz 0 -5 -1.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 180 0 0)
+		)
+	)
 )
